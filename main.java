@@ -8,19 +8,16 @@ public class main {
         int passengars = 0;
 
         System.out.println("Passenger Controller");
-        int controll;
+        System.out.println(" 1. Clear the boat \n 2. Add 1 to passengers \n 3. remove 1 from passengers \n 4. See Passengars\n 5. End Journey");
+        int controll = Sc.nextInt();
 
-        while (true) {
+        while (controll !=5) {
             System.out.println(
                     " 1. Clear the boat \n 2. Add 1 to passengers \n 3. remove 1 from passengers \n 4. See Passengars  \n 5. End Journey");
             controll = Sc.nextInt();
             Sc.nextLine();
 
-            if (controll == 5) {
-              break;
-            } else {
-
-                switch (controll) {
+            switch (controll) {
                 case 1:
                     passengars = 0;
                     break;
@@ -30,9 +27,8 @@ public class main {
 
                 case 3:
                     if (passengars > 1) {
-                        passengars -=1;
-                    }
-                    else {
+                        passengars -= 1;
+                    } else {
                         System.out.println("No passengers add some");
                     }
                     break;
@@ -40,16 +36,13 @@ public class main {
                 case 4:
                     System.out.println("There are " + passengars + " passengars");
                     break;
-        
-                default: System.out.println("Try Again");;
-                    
-            }
+
+                default:
+                    break;
 
             }
-            
 
         }
-
 
         // calculator
 
