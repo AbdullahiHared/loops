@@ -46,5 +46,15 @@ public class main {
 
         // calculator
 
+        System.out.println("Calculator");
+        int calculator = Sc.nextInt();
+        int result = 1;
+
+       for (int i = 1; i <= calculator; i++) {
+            result*= i;
+       }
+
+       System.out.println(result);
+
     }
 }
