@@ -12,11 +12,15 @@ public class main {
 
         while (true) {
             System.out.println(
-                    " 1. Clear the boat \n 2. Add 1 to passengers \n 3. remove 1 from passengers \n 4. See Passengars ");
+                    " 1. Clear the boat \n 2. Add 1 to passengers \n 3. remove 1 from passengers \n 4. See Passengars  \n 5. End Journey");
             controll = Sc.nextInt();
             Sc.nextLine();
 
-            switch (controll) {
+            if (controll == 5) {
+              break;
+            } else {
+
+                switch (controll) {
                 case 1:
                     passengars = 0;
                     break;
@@ -36,10 +40,18 @@ public class main {
                 case 4:
                     System.out.println("There are " + passengars + " passengars");
                     break;
-                default:
-                    System.out.println(passengars);
+        
+                default: System.out.println("Try Again");;
+                    
             }
+
+            }
+            
+
         }
+
+
+        // calculator
 
     }
 }
