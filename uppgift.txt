@@ -1,0 +1,43 @@
+Uppgift 2 Loopar
+
+1. Meny-Program
+Skriv ett menystyrt program som hjälper en båtägare att hålla reda på hur många
+passagerare som finns ombord. Programmet ska ge användaren möjlighet att göra
+upprepade val under en och samma körning. Antalet passagerare är noll då programmet
+startar. Användaren ska mata in siffran för meny-valet( ex 1 så väljs nollställ passagerare)
+Använd swicth-case
+Meny:
+1. Nollställ antalet passagerare.
+2. Öka antalet passagerare med en.
+3. Minska antalet passagerare med en.
+4. Skriv ut antalet passagerare.
+5. Avsluta
+
+2 Mini-räknare
+Gör ett program som beräknar 1 + 2 + 3 + 4 + 5 + 6 + ... + n, där värdet på n bestäms av
+användaren. Lägg sedan till lite kod så att hela uttrycket &quot;1 + 2 + 3 + 4 + 5 + 6 + ... + n = xx&quot;
+skrivs ut.
+a) Förändra a) så att du beräknar 1 · 2 · 3 · 4 · ... * n. (Detta uttryck betecknas n! inom
+matematiken.)
+b) Gör ett program där användaren får mata in ett antal positiva heltal. Inmatningen
+avslutas med ett negativt tal. Programmet ska sedan skriva ut det största talet det minsta
+talet och slutligen alla inmatade tal.
+
+2. Skicka in data till programmet vid programstart
+Main metoden som anropas av javamotorn får ett text-fält till sig (String[] args) från cmd
+(kommandotolken)
+
+Om vi går igenom det fältet så kan skicka kommandon till programmet vid program-starten.
+Programmet skriver ut hur många kommandon text-fältet innehåller samt skriver ut varje kommando
+
+Här skickar vi inga argument utan vi startar java-programmet normalt från kommandotolken.
+
+Här skickar vi in kommandon ”hej på dig” till programmet
+
+Uppgiften
+För att det ska gå så enkelt som möjligt att köra programmet från kommandotolken så skapa
+javafilen i din dokument-mapp.
+Skapa ett program som är en miniräknare där 1:a elementet är räknesättet och resten är heltal.
+Exempelvis om vi vill räkna ut 1+23+32
+
+Exempelvis om vi vill räkna ut 65-23-32
