@@ -1,3 +1,5 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class main {
@@ -11,7 +13,7 @@ public class main {
         System.out.println(" 1. Clear the boat \n 2. Add 1 to passengers \n 3. remove 1 from passengers \n 4. See Passengars\n 5. End Journey");
         int controll = Sc.nextInt();
 
-        while (controll !=5) {
+        while (controll != 5) {
             System.out.println(
                     " 1. Clear the boat \n 2. Add 1 to passengers \n 3. remove 1 from passengers \n 4. See Passengars  \n 5. End Journey");
             controll = Sc.nextInt();
@@ -29,7 +31,7 @@ public class main {
                     if (passengars > 1) {
                         passengars -= 1;
                     } else {
-                        System.out.println("No passengers add some");
+                        System.out.println("No passengers, add some");
                     }
                     break;
 
@@ -50,11 +52,14 @@ public class main {
         int calculator = Sc.nextInt();
         int result = 1;
 
-       for (int i = 1; i <= calculator; i++) {
-            result*= i;
-       }
+        for (int i = 1; i <= calculator; i++) {
+            result *= i;
+        }
 
-       System.out.println(result);
+        System.out.println(result);
 
+        for (int i = 0; i < 5; i++) {
+            Sc.nextInt();
+        }
     }
 }
